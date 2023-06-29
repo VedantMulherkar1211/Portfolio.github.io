@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: whitesmoke;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FE83FF;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #194eb9;
+    ;
+}
+
+a {
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all .3s ease;
+    animation: flicker 0.5s infinite alternate;
+    color: black;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+
+
+}
+
+.navbar {
+    display: flex;
+    gap: 24px
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+a:hover,
+.active {
+    background-color: #FE83FF;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+#purple,
+#moon {
+    mix-blend-mode: screen;
+}
+
+.hero p {
+    font-weight: 300;
+    font-size: 80px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    line-height: 1.1;
+    text-shadow: 8px 8px 6px black;
+    transform: translateY(-50%);
+    color: black;
+    text-shadow:
+        0 0 7px #a61313,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(120, 141, 134),
+        0 0 82px #0fa,
+        0 0 92px rgb(228, 241, 237),
+        0 0 151px #0fa;
+
+
+}
+
+.hero p span {
+    font-weight: 300;
+    font-size: 80px;
+    color: black;
+    text-shadow:
+        0 0 7px #a61313,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(120, 141, 134),
+        0 0 82px #0fa,
+        0 0 92px rgb(228, 241, 237),
+        0 0 151px #0fa;
+
+}
+
+main {
+    position: relative;
+    padding: 92px 48px;
+    background-color: black;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 20px;
+}
+
+main h2 {
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #0fa,
+            0 0 80px #0fa,
+            0 0 90px #0fa,
+            0 0 100px #0fa,
+            0 0 150px #0fa;
+
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
